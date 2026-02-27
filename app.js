@@ -40,8 +40,10 @@ filterButtons.forEach(btn => {
     btn.classList.add("active");
     const f = btn.getAttribute("data-filter");
     projectCards.forEach(card => {
-      const type = card.getAttribute("data-type");
-      card.style.display = (f === "all" || type === f) ? "" : "none";
+      const types = (card.getAttribute("data-type") || "")
+        .split(/\s+/)
+        .filter(Boolean);
+      card.style.display = (f === "all" || types.includes(f)) ? "" : "none";
     });
   });
 });
