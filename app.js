@@ -19,9 +19,9 @@ backdrop?.addEventListener("click", closeDrawer);
 drawerLinks.forEach(a => a.addEventListener("click", closeDrawer));
 
 // ====== EMAILJS CONFIG ======
-const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+const EMAILJS_PUBLIC_KEY = "9BfdvxkK0iPMPiHHm";
+const EMAILJS_SERVICE_ID = "service_dbd5au1";
+const EMAILJS_TEMPLATE_ID = "template_hy46eku";
 
 (function initEmailJS(){
   if (!window.emailjs) return;
